@@ -69,7 +69,7 @@ static const struct arg args[] = {
 	{ battery_perc, "BAT: %s ON: ", "BAT0"},
 	{ battery_state, "%s | ", "BAT0"},
 	{ run_command, "VOL: %s | ", "amixer -M get Master | awk -- '/^  M/ {print $4}' | tr -d []" },
-	{ datetime, "DATE: %s | ", "%F %T" },
+	{ datetime, "DATE: %s | ", "%I:%M:%S %a %d-%m-%Y %p"},
 	{ username, "%s@", NULL},
 	{ hostname, "%s", NULL}
 };
