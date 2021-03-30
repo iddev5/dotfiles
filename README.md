@@ -1,5 +1,6 @@
-# My Suckless Tools
+# My ``.dotfiles`` !
 
-## dmenu
+## Suckless Tools
+### dmenu
 - highlight
 - numbers
