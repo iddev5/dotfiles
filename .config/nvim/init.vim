@@ -26,12 +26,15 @@ colorscheme onehalfdark
 
 nnoremap <leader>f :NERDTreeToggle<CR>
 
-noremap <C-w>+ :resize +5<CR>
-noremap <C-w>- :resize -5<CR>
-noremap <C-w>< :vertical:resize -5<CR>
-noremap <C-w>> :vertical:resize +5<CR>
+noremap <silent> <C-Left> :vertical resize +3<CR> 
+noremap <silent> <C-Right> :vertical resize -3<CR> 
+noremap <silent> <C-Up> :resize +3<CR> 
+noremap <silent> <C-Down> :resize -3<CR>
 
 let g:airline_theme='bubblegum'
 let g:airline_powerline_fonts=1
 
 let g:deoplete#enable_at_startup=1
+
+highlight VertSplit ctermbg=NONE guibg=NONE
+
